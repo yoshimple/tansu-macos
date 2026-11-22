@@ -1,0 +1,6 @@
+// このファイルを Local.xcconfig という名前でコピーし、自分の Team ID を書く。
+// Team ID は Xcode > Settings > Accounts で Apple ID を選ぶと確認できる（無料アカウントでも可）。
+// 署名が固定されるので、ビルドし直してもファイルへのアクセス許可を何度も尋ねられなくなる。
+
+DEVELOPMENT_TEAM = XXXXXXXXXX
+CODE_SIGN_IDENTITY = Apple Development

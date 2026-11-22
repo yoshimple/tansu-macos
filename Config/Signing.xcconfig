@@ -1,0 +1,8 @@
+// 署名の既定値。誰でもそのままビルドできるよう、ローカル実行用の署名（ad-hoc）にしている。
+// 自分の Apple ID で署名したい場合は Local.xcconfig.example を Local.xcconfig にコピーして編集する。
+// Local.xcconfig は .gitignore 済みで、リポジトリには含めない。
+
+CODE_SIGN_IDENTITY = -
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"

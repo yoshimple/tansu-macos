@@ -1,0 +1,30 @@
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+Config/Local.xcconfig
+
+# Build outputs (case-sensitive filesystems, e.g. GitHub/Linux)
+Build/
+output/
+*.xcarchive
+*.dSYM.zip
+*.ipa
+
+# Local working files (never commit)
+ai_wiki/
+
+# Secrets / environment
+.env
+.env.*
+!.env.example
+
+# Signing material
+*.p12
+*.p8
+*.pem
+*.cer
+*.mobileprovision
+*.provisionprofile
