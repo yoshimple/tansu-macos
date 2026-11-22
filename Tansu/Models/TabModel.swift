@@ -80,11 +80,17 @@ final class TabModel: ObservableObject, Identifiable {
         var isDirectory: ObjCBool = false
         while candidate.path != "/" {
             if FileManager.default.fileExists(atPath: candidate.path, isDirectory: &isDirectory), isDirectory.boolValue {
-                return candidate
+                return resolveDirectoryLink(candidate)
             }
             candidate = candidate.deletingLastPathComponent()
         }
         return candidate
+    }
+
+    /// フォルダを指すシンボリックリンクを開くときは、リンク先へ移動する。
+    private static func resolveDirectoryLink(_ url: URL) -> URL {
+        guard (try? url.resourceValues(forKeys: [.isSymbolicLinkKey]).isSymbolicLink) == true else { return url }
+        return url.resolvingSymlinksInPath().standardizedFileURL
     }
 
     var isSearching: Bool {
@@ -136,13 +142,14 @@ final class TabModel: ObservableObject, Identifiable {
             NSWorkspace.shared.open(target)
             return true
         }
-        if target == url {
+        let directory = Self.resolveDirectoryLink(target)
+        if directory == url {
             reload()
             return true
         }
         backStack.append(url)
         forwardStack.removeAll()
-        show(target)
+        show(directory)
         return true
     }
 
