@@ -3,7 +3,7 @@
 Tansuは、Windowsのエクスプローラーに慣れた人向けのmacOSファイルマネージャーです。
 タブとアドレスバーでフォルダを行き来し、F2で名前を変え、Enterでファイルを開けます。
 
-**[Tansuをダウンロード](https://github.com/yoshimple/tansu-macos/releases/latest)**
+**[Tansuをダウンロード（DMG）](https://github.com/yoshimple/tansu-macos/releases/latest/download/Tansu.dmg)**
 
 macOS 14以降 · Apple Silicon／Intel
 
@@ -11,9 +11,9 @@ macOS 14以降 · Apple Silicon／Intel
 
 ## インストール
 
-1. [GitHub Releases](https://github.com/yoshimple/tansu-macos/releases/latest)から `Tansu-バージョン.zip` をダウンロードします。
-2. ZIPを展開し、`Tansu.app` を「アプリケーション」フォルダに移して開きます。
-3. デスクトップや書類など、使いたいフォルダへのアクセスをmacOSに尋ねられたら許可します。
+1. ダウンロードした `Tansu.dmg` を開きます。
+2. ウィンドウ内の `Tansu.app` を `Applications`（アプリケーション）のショートカットへドラッグします。
+3. 「アプリケーション」フォルダからTansuを開き、使いたいフォルダへのアクセスをmacOSに尋ねられたら許可します。
 
 ## 主な機能
 

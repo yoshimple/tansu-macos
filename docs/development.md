@@ -74,14 +74,15 @@ App Store 外での直接配布を前提にしています。App Sandbox は使�
 xcrun notarytool store-credentials tansu-notary --apple-id "YOUR_APPLE_ID" --team-id "YOUR_TEAM_ID"
 ```
 
-用意ができたら、次のスクリプトでビルド、署名、公証、staple までを行い、`build/release/Tansu-<バージョン>.zip` を作ります。
+用意ができたら、次のスクリプトでアプリをビルド・署名し、Developer ID署名と公証チケットを付けた `build/release/Tansu.dmg` を作ります。
 Team ID は環境変数 `TEAM_ID`、なければ `Config/Local.xcconfig` の `DEVELOPMENT_TEAM` を使います。
 
 ```bash
 Scripts/release.sh
 ```
 
-Release 構成では Hardened Runtime を有効にしています。
+署名済みのアプリを再梱包する場合は、`Scripts/release.sh /path/to/Tansu.app` を使えます。
+Release 構成では Hardened Runtime を有効にしています。GitHub Releasesには `Tansu.dmg` の名前で添付します。
 
 ## 将来の構想
 
