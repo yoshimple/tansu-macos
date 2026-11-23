@@ -3,7 +3,7 @@
 Tansuは、Windowsのエクスプローラーに慣れた人向けのmacOSファイルマネージャーです。
 タブとアドレスバーでフォルダを行き来し、F2で名前を変え、Enterでファイルを開けます。
 
-**[Tansuをダウンロード（DMG）](https://github.com/yoshimple/tansu/releases/latest/download/Tansu.dmg)**
+**[Tansuをダウンロード（DMG）](https://github.com/yoshimple/tansu-public/releases/latest/download/Tansu.dmg)**
 
 macOS 14以降 · Apple Silicon／Intel
 
@@ -38,7 +38,7 @@ macOS 14以降 · Apple Silicon／Intel
 
 ## 開発と問い合わせ
 
-Xcode 16以降でソースからビルドできます。[開発ガイド](docs/development.md)にビルド、テスト、配布の手順があります。不具合報告や機能提案は[GitHub Issues](https://github.com/yoshimple/tansu/issues)にお寄せください。
+Xcode 16以降でソースからビルドできます。[開発ガイド](docs/development.md)にビルド、テスト、配布の手順があります。不具合報告や機能提案は[GitHub Issues](https://github.com/yoshimple/tansu-public/issues)にお寄せください。
 
 ## ライセンス
 
